@@ -1,0 +1,58 @@
+AI CHATBOT PROJECT KNOWLEDGE
+
+Project Name:
+AI Chatbot Web Application
+
+Purpose:
+This project is a dynamic AI chatbot web application developed as part of internship training.
+
+Frontend:
+The frontend is developed using React and Vite.
+
+Backend:
+The backend is developed using Python and FastAPI.
+
+AI Model:
+The application uses the Google Gemini API to generate AI responses.
+
+Cloud Platform:
+The application is deployed on Amazon Web Services (AWS).
+
+Compute:
+The application backend runs on an Amazon EC2 instance running Ubuntu.
+
+Web Server:
+Nginx is used as the production web server and reverse proxy.
+
+Domain:
+The application is available through the domain samratdev.fun.
+
+HTTPS:
+HTTPS is configured using Let's Encrypt and Certbot.
+
+Architecture:
+The browser sends requests to the React frontend. Nginx receives production web traffic and forwards chatbot API requests to the FastAPI backend. FastAPI communicates with the Gemini API and the AWS Knowledge Base.
+
+AWS Region:
+The application infrastructure is deployed in the Asia Pacific (Mumbai) AWS Region, also known as ap-south-1.
+
+Knowledge Base:
+The project uses Amazon Bedrock Knowledge Bases for Retrieval-Augmented Generation (RAG).
+
+RAG:
+RAG allows the chatbot to retrieve relevant information from project documents before generating an answer.
+
+Knowledge Base Data Source:
+Amazon S3 is used to store documents that are ingested into the AWS Knowledge Base.
+
+Vector Store:
+Amazon S3 Vectors is used as the vector storage for the Knowledge Base.
+
+RAG Flow:
+Documents are stored in Amazon S3. Amazon Bedrock Knowledge Bases processes the documents, creates text chunks and embeddings, and stores the vectors in S3 Vectors. When the user asks a question, the application retrieves relevant information from the Knowledge Base and provides that information to the AI model as context.
+
+Security:
+API keys and other secrets must not be committed to GitHub. Application secrets are stored using environment variables or appropriate AWS secret-management mechanisms.
+
+Production Web Flow:
+User browser -> HTTPS -> Nginx -> React/FastAPI -> Gemini and AWS Knowledge Base.
