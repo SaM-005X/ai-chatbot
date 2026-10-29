@@ -270,29 +270,12 @@ ai-chatbot/
 ## 🚀 How the Project Was Built & Delivered (Step-by-Step Workflow)
 
 ```mermaid
-journey
-    title Full-Stack Cloud Engineering Lifecycle
-    section Phase 1: Local Development
-      React & Vite Chat UI: 5: Me
-      FastAPI & Uvicorn API: 5: Me
-      Gemini API & 3-Retry Logic: 5: Me
-      Git & Secret Protection: 5: Me
-    section Phase 2: AWS Infrastructure
-      EC2 Ubuntu Provisioning: 5: Me
-      Security Group Hardening: 5: Me
-      Elastic IP Binding: 5: Me
-    section Phase 3: Production Server
-      systemd Daemonization: 5: Me
-      Nginx Reverse Proxy: 5: Me
-    section Phase 4: Custom Domain & SSL
-      Hostinger DNS Setup: 5: Me
-      Let's Encrypt Certbot: 5: Me
-    section Phase 5: Enterprise Bedrock RAG
-      S3 Bucket & S3 Vectors: 5: Me
-      Titan Embeddings V2 KB: 4: Me
-      AWS CLI Diagnostic Role: 5: Me
-    section Phase 6: FinOps Audit
-      Cloud Teardown & Preservation: 5: Me
+flowchart LR
+    P1["1. Local Full-Stack<br/>React 19 • FastAPI • Gemini"] --> P2["2. AWS Infrastructure<br/>EC2 ap-south-1 • VPC • Elastic IP"]
+    P2 --> P3["3. Production Server<br/>systemd • Nginx Reverse Proxy"]
+    P3 --> P4["4. Domain & SSL<br/>Hostinger DNS • Certbot TLS"]
+    P4 --> P5["5. Bedrock RAG<br/>S3 Vectors • CLI Diagnostics"]
+    P5 --> P6["6. FinOps Teardown<br/>Audit • 99.5% Credits Saved"]
 ```
 
 ---
