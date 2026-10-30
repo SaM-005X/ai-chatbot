@@ -652,7 +652,7 @@ To eliminate recurring hourly charges after project sign-off, the following clea
 
 ## 👤 Author & Acknowledgments
 
-- **Lead Engineer**: [Samrat](https://github.com/SaM-005X)
+- **Lead Engineer**: [**Samrat Sengupta**](https://github.com/SaM-005X)
 - **Internship Organization**: **Workmates Core2Cloud**
 - **Special Thanks**: Sincere gratitude to my internship mentor at **Workmates Core2Cloud** for guiding the architectural roadmap, encouraging infrastructure-as-code principles, and teaching enterprise AWS cloud best practices.
 
